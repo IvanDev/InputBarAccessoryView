@@ -102,7 +102,7 @@ open class KeyboardManager: NSObject, UIGestureRecognizerDelegate {
     // MARK: - Keyboard Observer
 
     /// Add an observer for each keyboard notification
-    private func addObservers() {
+    public func addObservers() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardWillShow(notification:)),
                                                name: UIResponder.keyboardWillShowNotification,
